@@ -28,7 +28,7 @@ export var hobbyReducer = (state = [], action) => {
 
 
 var newMovieId = 1;
-export var moviereducer = (state = [], action) => {
+export var movieReducer = (state = [], action) => {
   switch (action.type){
     case 'ADD_MOVIE':
       return [
@@ -46,7 +46,7 @@ export var moviereducer = (state = [], action) => {
 };
 
 
-export var mapreducer = (state = {isFetching: false, url: undefined}, action) => {
+export var mapReducer = (state = {isFetching: false, url: undefined}, action) => {
   switch (action.type){
     case 'START_LOCATION_FETCH':
       return {
